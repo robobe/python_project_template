@@ -1,5 +1,33 @@
-# python project template
-Create python template using [project template](https://marketplace.visualstudio.com/items?itemName=cantonios.project-templates) extension
+# Python project template
+Create python project template using VSCode [project template](https://marketplace.visualstudio.com/items?itemName=cantonios.project-templates) extension
+
+## usage
+- Install `project template` extension
+- Clone Repository
+- Create template from clone project
+- Make your on
+
+### Install ext.
+```bash
+code --install-extension cantonios.project-templates	
+```
+
+### Clone
+
+```bash
+git clone git@github.com:robobe/python_project_template.git
+```
+
+### Create template from clone project
+
+![](docs/images/save_project_as_temlate.png)
+
+
+### Make your on
+
+![](docs/images/create_project_from_template.png)
+
+---
 
 ## Project Templates
 ### placeholder
@@ -18,8 +46,7 @@ Create python template using [project template](https://marketplace.visualstudio
 }
 ```
 
-## Tasks
+---
 
-| Task  | Description  |
-|---|---|
-| build venv  | Create venv and install requiremnts-dev  |
+## Wiki
+Check [Wiki](https://github.com/robobe/python_project_template/wiki) for more

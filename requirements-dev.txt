@@ -6,4 +6,3 @@ isort
 pytest
 pylint
 flake8
-mkdocs-material
