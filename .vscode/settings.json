@@ -17,4 +17,11 @@
         }
     },
     "python.formatting.provider": "black",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests",
+        "-c",
+        "pytest.ini"
+    ],
 }
