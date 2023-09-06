@@ -22,8 +22,16 @@
         {
             "label": "build prod container",
             "type": "shell",
-            "command": "docker build  -t ${workspaceFolderBasename}:deploy -f dockers/Dockerfile.prod .",
+            "command": "docker build  -t ${workspaceFolderBasename}:deploy -f dockers/Dockerfile.prod --build-arg APP_VER=${input:app_version} .",
             "problemMatcher": []
+        },
+    ],
+    "inputs": [
+        {
+            "id": "app_version",
+            "description": "app_version",
+            "options": ["0.0.1", "0.0.2"],
+            "type": "pickString"
         },
     ]
 }
