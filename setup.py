@@ -9,5 +9,10 @@ setup(
     description='#{project_description}',
     packages=find_packages(),
     install_requires=[],
-    include_package_data=True
+    include_package_data=True,
+    entry_points={
+        "console_scripts": [
+            "#{project_name}=#{project_name}.app:main"
+        ]
+    }
 )
