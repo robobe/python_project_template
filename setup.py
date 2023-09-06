@@ -9,4 +9,5 @@ setup(
     description='#{project_description}',
     packages=find_packages(),
     install_requires=[],
+    include_package_data=True
 )

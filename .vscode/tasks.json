@@ -12,6 +12,12 @@
             "type": "shell",
             "command": "python -m cProfile -o /tmp/${fileBasenameNoExtension}.pref -s cumtime ${file} && tuna /tmp/${fileBasenameNoExtension}.pref ",
             "problemMatcher": []
+        },
+        {
+            "label": "build wheel",
+            "type": "shell",
+            "command": "${command:python.interpreterPath} setup.py bdist_wheel",
+            "problemMatcher": []
         }
     ]
 }
