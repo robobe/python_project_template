@@ -18,6 +18,12 @@
             "type": "shell",
             "command": "${command:python.interpreterPath} setup.py bdist_wheel",
             "problemMatcher": []
-        }
+        },
+        {
+            "label": "build prod container",
+            "type": "shell",
+            "command": "docker build  -t ${workspaceFolderBasename}:deploy -f dockers/Dockerfile.prod .",
+            "problemMatcher": []
+        },
     ]
 }

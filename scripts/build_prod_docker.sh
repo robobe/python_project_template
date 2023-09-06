@@ -1,0 +1,1 @@
+docker build -t #{project_name}:prod -f ../dockers/Dockerfile.prod ..
