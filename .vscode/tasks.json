@@ -6,6 +6,12 @@
             "type": "shell",
             "command": "/bin/bash -x scripts/venv.bash",
             "problemMatcher": []
+        },
+        {
+            "label": "profile",
+            "type": "shell",
+            "command": "python -m cProfile -o /tmp/${fileBasenameNoExtension}.pref -s cumtime ${file} && tuna /tmp/${fileBasenameNoExtension}.pref ",
+            "problemMatcher": []
         }
     ]
 }

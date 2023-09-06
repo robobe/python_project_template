@@ -27,6 +27,9 @@ git clone git@github.com:robobe/python_project_template.git
 
 ![](docs/images/create_project_from_template.png)
 
+!!! Tip
+    Run **build venv** task or `venv.bash` script 
+
 ---
 
 ## Project Templates

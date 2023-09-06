@@ -6,3 +6,4 @@ isort
 pytest
 pylint
 flake8
+tuna # profiler pstat graph
