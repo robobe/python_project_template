@@ -8,4 +8,4 @@ COPY ./requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /tmp/requirements.txt
 COPY ./dist/#{project_name}-${APP_VER}-py3-none-any.whl /tmp
 RUN pip install /tmp/#{project_name}-${APP_VER}-py3-none-any.whl
-ENTRYPOINT [#{project_name}]
+ENTRYPOINT ["#{project_name}"]

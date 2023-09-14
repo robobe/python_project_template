@@ -22,7 +22,7 @@
         {
             "label": "build prod container",
             "type": "shell",
-            "command": "docker build  -t ${workspaceFolderBasename}:deploy -f dockers/Dockerfile.prod --build-arg APP_VER=${input:app_version} .",
+            "command": "docker build  -t #{project_name}:prod -f dockers/Dockerfile.prod --build-arg APP_VER=${input:app_version} .",
             "problemMatcher": []
         },
     ],
