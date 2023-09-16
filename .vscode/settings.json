@@ -1,4 +1,10 @@
 {
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreview": false,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#ff0000",
+        "tab.unfocusedActiveBorder": "#000000"
+    },
     "python.linting.mypyEnabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": true,
@@ -10,13 +16,15 @@
         "**/__pycache__": true,
         "venv": true
     },
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.fixAll": true
         }
     },
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [
@@ -24,4 +32,9 @@
         "-c",
         "pytest.ini"
     ],
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    }
 }
